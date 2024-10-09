@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="calculator-container">
+      <input type="text" id="calculator-display" readonly />
+
+      <div class="calc-container-V2">
+        <button class="calc-digits" value="7" onclick="retrieve('7')">7</button>
+        <button class="calc-digits" value="8" onclick="retrieve('8')">8</button>
+        <button class="calc-digits" value="9" onclick="retrieve('9')">9</button>
+        <button class="calc-operators" value="+" onclick="retrieve('+')">
+          +
+        </button>
+        <button class="calc-digits" value="4" onclick="retrieve('4')">4</button>
+        <button class="calc-digits" value="5" onclick="retrieve('5')">5</button>
+        <button class="calc-digits" value="6" onclick="retrieve('6')">6</button>
+        <button class="calc-operators" value="-" onclick="retrieve('-')">
+          -
+        </button>
+        <button class="calc-digits" value="1" onclick="retrieve('1')">1</button>
+        <button class="calc-digits" value="2" onclick="retrieve('2')">2</button>
+        <button class="calc-digits" value="3" onclick="retrieve('3')">3</button>
+        <button class="calc-operators" value="x" onclick="retrieve('*')">
+          x
+        </button>
+        <button id="reset-button" value="C" onclick="remove()">C</button>
+        <button class="calc-digits" value="0" onclick="retrieve('0')">0</button>
+        <button class="calc-operators" value="=" onclick="calculate()">
+          =
+        </button>
+        <button class="calc-operators" value="/" onclick="retrieve('/')">
+          /
+        </button>
+      </div>
+    </div>
+    <script src="../dist/main.js"></script>
+  </body>
+</html>
